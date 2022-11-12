@@ -3,45 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale = 0.86, maximum-scale=5.0, minimum-scale=0.86">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Shahar's Website</title>
 </head>
 <body>
     <div class="site">
         <header class="mastheader">
-            <a id="hlink" href="index.html"><h1><img src="favicon-32x32.png" alt="logo" class="logo">Shahar's Website</h1></a>
+            <a id="hlink" href="index.html"><h1><img src="favicon-32x32.png" alt="logo" class="logo">&nbsp;Shahar's Website</h1></a>
+            <div class="darkbutton">
+                <button class="but" onclick="myFunction()">Toggle dark mode</button>
+            </div>
         </header>
-        <main class="main-content">MAIN CONTENT</main>
+        <main class="main-content">
+            <div class ="main-container">
+                <div class="section">
+                    <div class="opener" id="Home">
+                        <h1>Shahar Meshulam's page</h1>
+                        <p>
+                        Welcome to my website!<br>
+                        I am a student at the Reichman and Google tech-school for web developers.<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="section img-align">
+                    <div id="Movie">
+                        <ul class ="default">
+                            <h2>My favorite movie</h2>
+                            <li><u>Description:</u><br>
+                                <br>A thief who steals corporate secrets through the use of dream-sharing technology
+                                <br>is given the inverse task of planting an idea into the mind of a C.E.O.,
+                                <br>but his tragic past may doom the project and his team to disaster.
+                            </li><hr>
+                            <li><u>Why I like the movie:</u><br>
+                                <br>Inception is absolutely a movie with it's own set of flaws, but what made it feel like such a
+                                <br>revolutionary and thrilling film is the fact that it is just a very smart concept and execution,
+                                <br>and it shamelessly relies on it's audience to be smart enough to understand everything that's going on too
+                            </li><hr>
+                            <li><u>Favorite quote:</u><br>
+                                <br>"You musn't be afraid to dream a little bigger, darling."
+                                <br> - Christopher Nolan
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="default">
+                            <br><br><img id="incept" src="https://upload.wikimedia.org/wikipedia/en/2/2e/Inception_%282010%29_theatrical_poster.jpg" alt="Inception"><br>
+                            <li><a href="https://www.imdb.com/title/tt1375666/" target="_blank">Inception on IMDB(Movies)!</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="section img-align">
+                    <div id="place">
+                        <ul class ="default">
+                            <h2>A place I enjoyed visiting</h2>
+                            <li><u>South Africa:</u><br>
+                                <br>South Africa is a country on the southernmost tip of the African continent,
+                                <br>marked by several distinct ecosystems. Inland safari destination Kruger National Park
+                                <br>is populated by big game. The Western Cape offers beaches, lush winelands around Stellenbosch
+                                <br>and Paarl, craggy cliffs at the Cape of Good Hope, forest and lagoons along the Garden Route,
+                                <br>and the city of Cape Town, beneath flat-topped Table Mountain. The country is also known for its
+                                <br>diverse wildlife, like lions and leopards.
+                            </li><hr>
+                            <li><u>Why I like it:</u><br>
+                                <br>South Africa is a country with a lot of diversity, nature, and history.
+                                <br>And it's a country that I would love to visit again in the future.
+                            </li><hr>
+                            <li><u>Favorite quote:</u><br>
+                                <br>"I have seen the world, and I have seen the future. And I have seen that the future is Africa."
+                                <br> - Nelson Mandela
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="default">
+                            <div class="img_scroll">
+                                <br><br>
+                                <img id="africa" src="https://media.cntraveller.com/photos/616572c80663fc4aeeeaf32c/2:3/w_942,h_1413,c_limit/south%20africa%20-%20GettyImages-898185804.jpeg" alt="Cape Town"><br>
+                                <img id="flag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Flag_of_South_Africa.svg/1920px-Flag_of_South_Africa.svg.png" alt="South Africa Flag"><br>
+                                <img id="safari" src="https://images.r.cruisecritic.com/features/2016/05/africa-cruise-safari.jpg" alt="Safari"><br>
+                            </div>
+                            <li><a href="https://www.google.com/mymaps/viewer?mid=1NSa-zVsQNY85f4xu2kT1AfC9S3I&hl=en_US" target="_blank">South Africa on Google maps</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="section">
+                   <div id="form">
+                    <br><h2>Feedback form</h2>
+                    <div class="container-left">
+                        <div class="jumbotron text-center">
+                                <form method="get">
+                                    <label for="name">Name:</label>
+                                    <input type="text" id="name" name="name" pattern="[a-zA-Z]+" placeholder="Your name.." required>  &nbsp; &nbsp;
+                                    <label for="email">Email:</label>
+                                    <input type="email" id="email" name="email" placeholder="Your email.." required>
+                                    <br><br>
+                                    <fieldset id="date_of_birth">
+                                        <label for="date_of_birth">Date of birth</label>
+                                        <input type="date" name="date_of_birth" id="date_of_birth" value="2000-01-01" min="1900-01-01" max="2050-12-31">  &nbsp; &nbsp;
+                                        <label for="phone">Phone number:</label>
+                                        <input type="tel" id="phone" name="phone" pattern="\d+"  placeholder="Your phone..">
+                                    </fieldset>
+                                    <br><br>
+                                    <fieldset>
+                                      <legend class="legend">Rate my website and work:</legend>
+                                      <label><input type="radio" name="radio" value="1" /> <br>1</label> &nbsp; &nbsp;
+                                      <label><input type="radio" name="radio" value="2" /> <br>2</label> &nbsp; &nbsp;
+                                      <label><input type="radio" name="radio" value="3" /> <br>3</label> &nbsp; &nbsp;
+                                      <label><input type="radio" name="radio" value="4" /> <br>4</label> &nbsp; &nbsp;
+                                      <label><input type="radio" name="radio" value="5" /> <br>5</label> &nbsp; &nbsp;
+                                      <br><br><legend class="legend">How did you find my website:</legend>
+                                      <select name="find_place" id="find_place">
+                                          <option value="" selected="selected">Select One</option>
+                                          <option value="GitHub" >GitHub</option>
+                                          <option value="Linkedin" >Linkedin</option>
+                                          <option value="Webdev" >Webdev</option>
+                                          <option value="Google" >Google</option>
+                                          <option value="Other" >Other</option>
+                                      </select>
+                                    </fieldset>
+                                    <br><br>
+                                    <fieldset>
+                                        <legend class="legend">Leave a message here:</legend>
+                                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:150px; width: 380px;"></textarea>
+                                    </fieldset>
+                                    <button class="but">Submit</button>
+                                </form>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+            </div>
+        </main>
         <aside class="navbar">
-            <table>
-                <tr>
-                    <td><a href="index.html">Home</a></td>
-                </tr>
-                <tr>
-                    <td><a href="about.html">About</a></td>
-                </tr>
-                <tr>
-                    <td><a href="contact.html">Contact</a></td>
-                </tr>
-                <tr>
-                    <td><a href="projects.html">Projects</a></td>
-                </tr>
-                <tr>
-                    <td><a href="resume.html">Resume</a></td>
-                </tr>
-                <tr>
-                    <td><a href="blog.html">Blog</a></td>
-                </tr>
-                <tr>
-                    <td><a href="gallery.html">Gallery</a></td>
-                </tr>
-                <tr>
-                    <td><a href="links.html">Links</a></td>
-                </tr>
-            </table>
+            <ul>
+                <li>
+                    <a href="index.html#Home">Home</a>
+                </li>
+                <li>
+                    <a href="index.html#Movie">My favorite movie</a>
+                </li>
+                <li>
+                    <a href="index.html#place">My favorite place</a>
+                </li>
+                <li>
+                    <a href="index.html#form">Feedback form</a>
+                </li>
+                <li>
+                    <a href="schools.html">My schools</a>
+                </li>
+                <li>
+                    <a href="contact.html">GitHub</a>
+                </li>
+            </ul>
         </aside>
         <footer class="footer">
+            <script>
+                function myFunction() {
+                    var element = document.body;
+                    element.classList.toggle("dark-mode");
+                 }
+            </script>
             <h3>Shahar Meshulam</h3>
             <h3><a href="mailto:shahar.meshulam@grunitech.com" target="_blank">shahar.meshulam@grunitech.com</a></h3>
         </footer>
