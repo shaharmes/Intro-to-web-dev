@@ -228,43 +228,55 @@
       height: 100%;
       
     }
+
+    
     .site {
-      grid-template-columns: 1fr;
-      grid-template-areas: "header"
-                           "navbar"
-                           "main"
-                           "footer";
+      display: grid;
+      grid-template-columns:1fr;
+      grid-template-areas:"header"
+                          "navbar"
+                          "main"
+                          "footer";
+      margin:0; padding:0; grid-gap: 0;
+      width: 100vw; height:100vh;
+      
     }
+
+    
+    .main-container {
+      overflow-y: visible;
+      height: 100%;
+    }
+    
     body {
       display: flex;
-      flex-direction: column;      
+      flex-direction: column; 
+      height: 100%;  
     }
     .mastheader{
       order: -2;
     }
     .navbar{
+      height: 100vh;
       order: -1;
     }
 
     
     .main-content{
       order: 1;
-      height: 100%;
+      height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
-      overflow: visible;
-      
-
     }
-
-    /* make section and img align appear one after the other instead of side by side */
+   
     .main-content section{
       order: 1;
       width: fit-content;
       height: fit-content;
       align-items: center;
       text-align: fit-content;
+      
     }
     .main-content .img-align{
       width: fit-content;
@@ -276,12 +288,6 @@
       
     }
 
-     
-    
-    .footer{
-      order: 2;
-    }
-
     .jumbotron{
       height: fit-content;
       width: fit-content;
@@ -291,5 +297,14 @@
     .opener{
       padding-top: 0;
     }
+
+    /* make footer appear at the bottom of the page after scrolling */
+    .footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+
     
   }
