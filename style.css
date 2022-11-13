@@ -129,10 +129,15 @@
       justify-content: center;
     }
 
-    .main-container {
-      overflow-y: scroll;
-      height: 100%;
+    @media screen and (min-width: 600px) {
+      .main-container {
+        overflow-y: scroll;
+        height: 100%;
+      }
     }
+      
+
+
 
     h2 {
       margin-top: 30px;
@@ -243,10 +248,7 @@
     }
 
     
-    .main-container {
-      overflow-y: visible;
-      height: 100%;
-    }
+  
     
     body {
       display: flex;
@@ -264,10 +266,10 @@
     
     .main-content{
       order: 1;
-      height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
+      min-height: auto;
     }
    
     .main-content section{
@@ -278,6 +280,11 @@
       text-align: fit-content;
       
     }
+
+    .section{
+      height: auto;
+    }
+
     .main-content .img-align{
       width: fit-content;
       height: fit-content;
@@ -300,7 +307,7 @@
 
     /* make footer appear at the bottom of the page after scrolling */
     .footer {
-      position: fixed;
+      
       bottom: 0;
       width: 100%;
     }
